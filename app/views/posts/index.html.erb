@@ -14,6 +14,9 @@
       <p class="post-body">
         <%= truncate(post.body, length: 200, separator: ' ') %>
       </p>
+      <p class="post-meta">
+        <strong>Author:</strong> <%= post.user.user_name if post.user %> |
+        <strong>Created at:</strong> <%= post.created_at.strftime("%B %d, %Y") %>
       <div class="post-actions">
         <%= link_to 'Read More', post %> |
         <%= link_to 'Edit', edit_post_path(post) %> |

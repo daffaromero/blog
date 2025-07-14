@@ -1,13 +1,17 @@
-<div style="display: flex; align-items: center;">
-    <h4><%= link_to 'Home', root_path %></h4>
-    <h4 style="display: flex; align-items: center; margin-left: 20px; justify-content: space-between; width: 100%;">
-      <% if current_user %>
-      <%= link_to 'My Posts', posts_myposts_path %>
-      <%= button_to 'Sign Out', destroy_user_session_path, method: 'delete' %>
-      <% else %>
-      <%= link_to 'Sign Up', new_user_registration_path %>
-      <%= link_to 'Sign in', new_user_session_path %>
-      
-      <% end %>
-    </h4>
+<div style="display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top: 24px;">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <h4 style="margin: 0;"><%= link_to 'Home', root_path %></h4>
+    <% if current_user %>
+      <h4 style="margin: 0;"><%= link_to 'My Posts', posts_myposts_path %></h4>
+    <% end %>
+  </div>
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <% if current_user %>
+      <h4 style="margin: 0;"><%= link_to 'Account', edit_user_registration_path %></h4>
+      <%= button_to 'Sign Out', destroy_user_session_path, method: 'delete', style: 'margin: 0;' %>
+    <% else %>
+      <h4 style="margin: 0;"><%= link_to 'Sign Up', new_user_registration_path %></h4>
+      <h4 style="margin: 0;"><%= link_to 'Sign in', new_user_session_path %></h4>
+    <% end %>
+  </div>
 </div>
