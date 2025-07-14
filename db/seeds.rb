@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Post.create([
-  { name: 'Post 1', description: 'Description for post 1', price: 10.0 },
-  { name: 'Post 2', description: 'Description for post 2', price: 20.0 },
-  { name: 'Post 3', description: 'Description for post 3', price: 30.0 },
-  { name: 'Post 4', description: 'Description for post 4', price: 40.0 },
-  { name: 'Post 5', description: 'Description for post 5', price: 50.0 }
+  { title: 'Post 1', body: 'The content of post 1', user_id: 1 },
+  { title: 'Post 2', body: 'The content of post 2', user_id: 1 },
+  { title: 'Post 3', body: 'The content of post 3', user_id: 1 },
+  { title: 'Post 4', body: 'The content of post 4', user_id: 1 },
+  { title: 'Post 5', body: 'The content of post 5', user_id: 1 },
 ])

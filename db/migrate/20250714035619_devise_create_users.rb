@@ -1,6 +1,8 @@
 class DeviseCreateUsers < ActiveRecord::Migration
   def change
-    create_table :users, id: :integer, primary_key: :id do |t|
+    create_table :users, options: 'ENGINE=InnoDB', id: false do |t|
+      t.column :id, 'int(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY'
+      
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""

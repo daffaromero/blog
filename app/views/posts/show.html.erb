@@ -1,16 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <h2>
-  <%= @post.name %>
+  <%= @post.title %>
 </h2>
 
 <p>
-  <%= @post.description %>
+  <%= @post.body %>
 </p>
 
-<p>
-  <%= @post.price %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Edit', edit_post_path(@post) %>
 <%= link_to 'Back', posts_path %>

@@ -1,12 +1,4 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Blog Posts</h1>
-
-<% if @posts.empty? %>
-  <p>No posts available.</p>
-<% end %>
-<br>
-
+<h3>Posts by <%= current_user.id %></h3>
 <div class="posts-container">
   <% @posts.each do |post| %>
     <div class="blog-post">
@@ -23,7 +15,3 @@
     <hr> <%# Adds a horizontal rule between posts %>
   <% end %>
 </div>
-
-<br>
-
-<%= link_to 'New Post', new_post_path %>
