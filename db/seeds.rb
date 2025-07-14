@@ -6,10 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Product.create([
-  { name: 'Product 1', description: 'Description for product 1', price: 10.0 },
-  { name: 'Product 2', description: 'Description for product 2', price: 20.0 },
-  { name: 'Product 3', description: 'Description for product 3', price: 30.0 },
-  { name: 'Product 4', description: 'Description for product 4', price: 40.0 },
-  { name: 'Product 5', description: 'Description for product 5', price: 50.0 }
+Post.create([
+  { name: 'Post 1', description: 'Description for post 1', price: 10.0 },
+  { name: 'Post 2', description: 'Description for post 2', price: 20.0 },
+  { name: 'Post 3', description: 'Description for post 3', price: 30.0 },
+  { name: 'Post 4', description: 'Description for post 4', price: 40.0 },
+  { name: 'Post 5', description: 'Description for post 5', price: 50.0 }
 ])
